@@ -1,0 +1,148 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "users",
+    "dateExported": "2023-10-02T21:44:43.752Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "e2bbe0db-8a68-4212-a50b-70ef5ff816b2",
+            "colId": "5676482d-8c40-468b-bdc4-149e64f54b89",
+            "containerId": "",
+            "name": "signup",
+            "url": "http://localhost:300/auth/signup",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-10-02T21:25:22.067Z",
+            "modified": "2023-10-02T21:25:22.067Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\" : \"amrgalalamr10@gmail.com\",\n  \"password\":\"20122001\",\n  \"username\":\"amr\",\n  \"phone\":\"01006612321\"\n  \n  \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "2cf98413-ea46-4a72-a1a4-ff97c56495c7",
+            "colId": "5676482d-8c40-468b-bdc4-149e64f54b89",
+            "containerId": "",
+            "name": "signin",
+            "url": "http://localhost:300/auth/signin",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-10-02T21:30:38.237Z",
+            "modified": "2023-10-02T21:30:38.237Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\n   \"email\" : \"amrgalalamr10@gmail.com\",\n  \"password\":\"20122001\"\n  \n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3033b2a1-cbb7-432b-b103-e2ef6a1e7889",
+            "colId": "5676482d-8c40-468b-bdc4-149e64f54b89",
+            "containerId": "",
+            "name": "signupVervication",
+            "url": "http://localhost:300/auth/signup/verfiy",
+            "method": "PATCH",
+            "sortNum": 40000,
+            "created": "2023-10-02T21:30:49.928Z",
+            "modified": "2023-10-02T21:30:49.928Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "email",
+                    "value": "efff@gmail.com",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "password",
+                    "value": "%2212%22",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "password",
+                    "value": "12",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "username",
+                    "value": "amr",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"amrgalalamr0@gmail.com\",\n  \"verfiy_code\":\"58418\"\n  \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "6a46adcf-e821-414d-be9c-3e69491d0edc",
+            "colId": "5676482d-8c40-468b-bdc4-149e64f54b89",
+            "containerId": "",
+            "name": "forgetpasswprd",
+            "url": "http://localhost:300/auth/forgetpassword",
+            "method": "PATCH",
+            "sortNum": 50000,
+            "created": "2023-10-02T21:33:37.391Z",
+            "modified": "2023-10-02T21:33:37.391Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\n    \"email\": \"amrgalalamr10@gmail.com\"\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a0a92172-1ff1-4b53-b5c0-5ac3c4bd3941",
+            "colId": "5676482d-8c40-468b-bdc4-149e64f54b89",
+            "containerId": "",
+            "name": "forgetpasswordVerfication",
+            "url": "http://localhost:300/auth/forgetpassword/verfiy ",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-10-02T21:37:57.907Z",
+            "modified": "2023-10-02T21:37:57.907Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"amrgalalamr0@gmail.com\",\n  \"verfiy_code\":\"58418\"\n  \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "658b84a1-5787-454f-88f8-2076ae342728",
+            "colId": "5676482d-8c40-468b-bdc4-149e64f54b89",
+            "containerId": "",
+            "name": "resetpassword",
+            "url": "http://localhost:300/auth/forgetpassword/resetpassword",
+            "method": "PATCH",
+            "sortNum": 70000,
+            "created": "2023-10-02T21:40:16.844Z",
+            "modified": "2023-10-02T21:40:16.844Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\n   \"email\" : \"amrgalalamr10@gmail.com\",\n  \"password\":\"20122001\"\n  \n  }",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
